@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
             hero_cta_products: "منتجاتنا",
             hero_cta_contact: "اتصل بنا",
             about_title: "إرث من الفخامة",
-            about_p1: "لأكثر من عقدين، كانت شركة الأمل للرخام والجرانيت حجر الزاوية في صناعة الأحجار الفاخرة. نحن متخصصون في توريد وتصنيع وتوفير أروع الأحجار الطبيعية من مصر وحول العالم.",
+            about_p1: " كانت شركة الأمل للرخام والجرانيت حجر الزاوية في صناعة الأحجار الفاخرة. نحن متخصصون في توريد وتصنيع وتوفير أروع الأحجار الطبيعية من مصر وحول العالم.",
             about_p2: "التزامنا بالجودة والحرفية يضمن أن كل لوح نقدمه يلبي أعلى معايير الجمال والمتانة، وهو مثالي للمهندسين المعماريين والمصممين وأصحاب المنازل الذين يتمتعون بنظرة ثاقبة للتفاصيل.",
             about_cta: "اعرف المزيد",
             gallery_preview_title: "اكتشف مجموعتنا",
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
             footer_col1_p: "قمة الفخامة في الأحجار الطبيعية والمصنعة.",
             footer_col2_title: "روابط سريعة",
             footer_col3_title: "تابعنا",
-            footer_copyright: "© 2024 عبدالله عيسى. جميع الحقوق محفوظة.",
+            footer_copyright: "© 2024   عبدالله عيسى. جميع الحقوق محفوظة.",
             products_title: "منتجاتنا",
             products_subtitle: "مجموعة حصرية من أجود أحجار العالم.",
             filter_all: "الكل",
@@ -186,17 +186,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 let itemIndex = 0;
 
                 galleryItems.forEach(item => {
-    const categories = item.getAttribute('data-category');
+                    const categories = item.getAttribute('data-category');
 
-    if (filterValue === 'all' || categories.includes(filterValue)) {
-        item.classList.remove('hide');
-        item.classList.add('show');
-        item.style.setProperty('--i', itemIndex++);
-    } else {
-        item.classList.remove('show');
-        item.classList.add('hide');
-    }
-});
+                    if (filterValue === 'all' || categories.includes(filterValue)) {
+                        item.classList.remove('hide');
+                        item.classList.add('show');
+                        item.style.setProperty('--i', itemIndex++);
+                    } else {
+                        item.classList.remove('show');
+                        item.classList.add('hide');
+                    }
+                });
 
             }
         });
@@ -238,6 +238,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-
-
-
