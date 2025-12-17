@@ -186,16 +186,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 let itemIndex = 0;
 
                 galleryItems.forEach(item => {
-                    item.style.setProperty('--i', 0); // Reset animation delay
-                    if (item.classList.contains(filterValue) || filterValue === 'all') {
-                        item.classList.remove('hide');
-                        item.classList.add('show');
-                        item.style.setProperty('--i', itemIndex++);
-                    } else {
-                        item.classList.remove('show');
-                        item.classList.add('hide');
-                    }
-                });
+    const categories = item.getAttribute('data-category');
+
+    if (filterValue === 'all' || categories.includes(filterValue)) {
+        item.classList.remove('hide');
+        item.classList.add('show');
+        item.style.setProperty('--i', itemIndex++);
+    } else {
+        item.classList.remove('show');
+        item.classList.add('hide');
+    }
+});
+
             }
         });
         // Set initial animation delays
@@ -236,4 +238,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
 
