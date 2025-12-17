@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
             footer_col1_p: "قمة الفخامة في الأحجار الطبيعية والمصنعة.",
             footer_col2_title: "روابط سريعة",
             footer_col3_title: "تابعنا",
-            footer_copyright: "© 2024 الأمل للرخام والجرانيت. جميع الحقوق محفوظة.",
+            footer_copyright: "© 2024 عبدالله عيسى. جميع الحقوق محفوظة.",
             products_title: "منتجاتنا",
             products_subtitle: "مجموعة حصرية من أجود أحجار العالم.",
             filter_all: "الكل",
@@ -238,5 +238,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
 
 
